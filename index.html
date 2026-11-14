@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yulia Krasova — Portfolio</title>
+  <meta name="description" content="Animation, illustration and game art by Yulia Krasova.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <h1>Yulia Krasova</h1>
+
+      <p class="contact">
+        <strong>Contact me</strong> <a href="mailto:yubkrasova@gmail.com"><em>yubkrasova@gmail.com</em></a><br>
+        <em>tg: <a href="https://t.me/yuzikibebari">@yuzikibebari</a></em>
+      </p>
+
+      <p class="file">
+        <a href="assets/CV_Yulia_Krasova_2026.pdf" target="_blank" rel="noopener">
+          <span class="file-icon" aria-hidden="true">PDF</span>CV_Yulia Krasova_2026.pdf
+        </a>
+        <span class="file-size">1.4 MiB</span>
+      </p>
+
+      <ul class="links">
+        <li><strong>Games</strong> <a href="https://varluch.itch.io/">https://varluch.itch.io/</a></li>
+        <li><strong>Behance</strong> <a href="https://www.behance.net/kachow">https://www.behance.net/kachow</a></li>
+      </ul>
+    </header>
+
+    <hr>
+
+    <figure>
+      <img src="assets/trinkets-sprites.png" alt="Character sprites for the jam game Trinkets" width="1920" height="706">
+      <figcaption>Sprites for a Jam game “Trinkets”</figcaption>
+    </figure>
+
+    <hr>
+
+    <!-- Tabs: each button's data-tab matches a panel id. Add/remove pairs freely. -->
+    <nav class="tabs" role="tablist" aria-label="Work">
+      <button role="tab" id="tab-animation" aria-controls="animation" data-tab="animation">Animation</button>
+      <button role="tab" id="tab-illustration" aria-controls="illustration" data-tab="illustration">Illustration</button>
+    </nav>
+
+    <section class="panel" id="animation" role="tabpanel" aria-labelledby="tab-animation">
+      <figure class="narrow">
+        <div class="video">
+          <iframe src="https://www.youtube-nocookie.com/embed/u9lfNnbDCvM?rel=0" title="Animation showreel"
+            loading="lazy" allowfullscreen
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+      </figure>
+
+      <hr>
+
+      <figure class="narrow">
+        <img src="assets/animation-sheet.png" alt="Animation frames" width="1916" height="1029" loading="lazy">
+      </figure>
+
+      <div class="row">
+        <img src="assets/hook.gif" alt="Hook animation" width="512" height="512" loading="lazy">
+        <img src="assets/devour.gif" alt="Devour animation" width="512" height="512" loading="lazy">
+        <img src="assets/punch.gif" alt="Punch animation" width="512" height="512" loading="lazy">
+      </div>
+      <div class="row row-small">
+        <img src="assets/idle.gif" alt="Idle animation" width="256" height="256" loading="lazy">
+        <img src="assets/jump-up.gif" alt="Jump animation" width="256" height="256" loading="lazy">
+        <img src="assets/walk.gif" alt="Walk animation" width="256" height="256" loading="lazy">
+      </div>
+    </section>
+
+    <section class="panel" id="illustration" role="tabpanel" aria-labelledby="tab-illustration" hidden>
+      <figure><img src="assets/illustration-1.png" alt="Illustration" width="2560" height="1132" loading="lazy"></figure>
+      <figure><img src="assets/illustration-2.png" alt="Illustration" width="2560" height="1071" loading="lazy"></figure>
+      <figure><img src="assets/illustration-3.png" alt="Illustration" width="2560" height="1071" loading="lazy"></figure>
+      <figure><img src="assets/illustration-4.png" alt="Illustration" width="1000" height="600" loading="lazy"></figure>
+    </section>
+
+    <footer>© <span id="year"></span> Yulia Krasova</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
