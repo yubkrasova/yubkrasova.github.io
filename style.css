@@ -125,6 +125,9 @@ figure.narrow { max-width: 576px; margin-inline: auto; }
   border-radius: 3px;
 }
 
+.panel > p { margin-bottom: 24px; }
+.credit { font-size: 14px; color: var(--muted); }
+
 footer { margin-top: 64px; font-size: 13px; color: var(--muted); }
 
 @media (max-width: 600px) {
