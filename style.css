@@ -70,32 +70,35 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 28px 0; }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
-  margin-bottom: 32px;
+  gap: 40px;
+  margin-bottom: 36px;
   position: sticky;
   top: 0;
-  padding: 14px 0;
+  padding-top: 12px;
   background: var(--bg);
+  border-bottom: 1px solid var(--line);
   z-index: 1;
 }
 .tabs button {
   font: inherit;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   color: var(--muted);
   background: transparent;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 10px 24px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px; /* sit the underline on the bar's bottom line */
+  padding: 10px 2px 12px;
   cursor: pointer;
-  transition: background-color .15s, color .15s, border-color .15s;
+  white-space: nowrap;
+  transition: color .15s, border-color .15s;
 }
-.tabs button:hover { color: var(--text); border-color: #4a4a4a; background: var(--tab-bg); }
-.tabs button[aria-selected="true"] { background: var(--text); border-color: var(--text); color: var(--bg); font-weight: 600; }
+.tabs button:hover { color: var(--text); }
+.tabs button[aria-selected="true"] { color: var(--text); border-bottom-color: var(--text); }
 
 @media (max-width: 600px) {
-  .tabs { gap: 4px; flex-wrap: nowrap; }
-  .tabs button { font-size: 14px; padding: 8px 12px; white-space: nowrap; }
+  .tabs { gap: 20px; flex-wrap: nowrap; }
+  .tabs button { font-size: 16px; padding: 8px 0 10px; }
 }
 .tabs button:focus-visible { outline: 2px solid var(--muted); outline-offset: 2px; }
 
